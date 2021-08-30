@@ -1,5 +1,4 @@
 import { useQuery, UseQueryOptions, UseQueryResult } from 'react-query'
-import { string } from 'yup/lib/locale'
 import { api } from '../api'
 
 type User = {

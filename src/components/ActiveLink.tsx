@@ -2,11 +2,11 @@ import Link, { LinkProps } from 'next/link'
 import { useRouter } from 'next/router'
 import { cloneElement, ReactElement } from 'react'
 
-interface AcetiveLinkProps extends LinkProps {
+interface ActiveLinkProps extends LinkProps {
   children: ReactElement
 }
 
-export function ActiveLink({ children, ...rest }: AcetiveLinkProps) {
+export function ActiveLink({ children, ...rest }: ActiveLinkProps) {
   const { asPath } = useRouter()
 
   let isActive = false
